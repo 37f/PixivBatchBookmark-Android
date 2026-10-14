@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.openai.pixivbatchbookmark'
+    compileSdk 35
+
+    defaultConfig {
+        // Independent edition: preserve the old installation when using a different signing key.
+        applicationId 'com.openai.pixivbatchbookmark.wallpaper'
+        minSdk 24
+        targetSdk 35
+        versionCode 10
+        versionName '0.1.7'
+    }
+}

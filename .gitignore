@@ -1,0 +1,10 @@
+.gradle/
+**/build/
+build-apk.*/
+dist/
+local.properties
+signing/
+*.jks
+*.keystore
+*.idsig
+tests/node_modules/

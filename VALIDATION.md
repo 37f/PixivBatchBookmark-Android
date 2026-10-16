@@ -1,4 +1,15 @@
-# Android v0.1.7 本地验证记录
+# Android 本地验证记录
+
+## v1.0 版本信息更新（2026-10-16）
+
+- 按用户指定范围，仅将当前源码改为 `versionName 1.0` / `versionCode 11`，同步应用内两处可见版本、构建脚本默认输出文件名、README 和仓库版本说明。功能、包名、壁纸及 SDK 配置保持原样。
+- 未构建或发布 v1.0 APK。现有 v0.1.7 发布页、标签、APK、源码附件及 SHA-256 校验文件保持原样；README 继续明确链接该旧版 APK。
+- 版本一致性检查及改动范围检查通过：MainActivity 的全部差异仅为两处 `v0.1.7` → `v1.0`；Android 目录仅改版本配置及这两处文字，未改业务逻辑。
+- 使用 Windows、Corretto JDK 17.0.10、Node.js 24.19.0 对修改前提交 `c7aee0944d93a9cbcdecba20db8bbc1fd736c6ff` 和本次源码分别执行同一组回归。Java 测试源码编译通过；解析 15 项、BatchGate 2 项、JavaScript 6 项及队列 12 项均通过。
+- TestRecovery 和 TestOwnership 两个存储测试组在 Windows 上因 `RecoveryStore.writeAtomic` 中 `File.renameTo` 未成功而失败；修改前与修改后的退出码、PASS 数一致。两个组在失败前另输出 5 条 PASS，全部已执行测试共输出 40 条 PASS；不能据此宣称完整回归通过。本次未修改这些存储代码。
+- v1.0 未执行 Android SDK 构建、设备安装或 Pixiv 线上操作；下方 v0.1.7 的历史构建证据仅属于旧版。
+
+## v0.1.7 历史验证记录
 
 日期：2026-10-13。基线：上传的 v0.1.6 源码（导入提交 `d9d1cb8`）。本记录替换旧版验收记录；旧截图仅作参考。
 

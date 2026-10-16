@@ -1,8 +1,10 @@
-# Pixiv 批量收藏工具 Android v0.1.7 快速队列·双壁纸版
+# Pixiv 批量收藏工具 Android v1.0 快速队列·双壁纸版
 
-基于用户提供的 v0.1.6 源码，版本名 `0.1.7`、`versionCode 10`。保留独立包名 `com.openai.pixivbatchbookmark.wallpaper`，`minSdk 24`、`targetSdk / compileSdk 35`，两张原壁纸均保持原样。仓库提供源码与 v0.1.7 APK，下载入口见下方。
+当前源码版本名 `1.0`、`versionCode 11`，由 v0.1.7 仅更新版本信息，功能保持原样。保留独立包名 `com.openai.pixivbatchbookmark.wallpaper`，`minSdk 24`、`targetSdk / compileSdk 35`，两张原壁纸均保持原样。
 
-## 下载 APK
+本次只更新仓库版本信息，未构建或发布 v1.0 APK。下方继续提供原 v0.1.7 APK，原发布页、附件和校验值保持原样。
+
+## 下载现有 APK（v0.1.7）
 
 [下载 v0.1.7 APK](https://github.com/37f/PixivBatchBookmark-Android/releases/download/v0.1.7/PixivBatchBookmark_Android_v0.1.7_fast_queue.apk) · [发布页面](https://github.com/37f/PixivBatchBookmark-Android/releases/tag/v0.1.7)
 
@@ -76,6 +78,6 @@ python build-apk.py --keystore 'C:\Private\signing.jks' --key-alias 'your-key-al
 Remove-Item Env:KEYSTORE_PASSWORD
 ```
 
-默认输出 `dist/PixivBatchBookmark_Android_v0.1.7_fast_queue.apk`，默认不覆盖已有文件。升级现有安装需要相同签名证书。
+默认输出 `dist/PixivBatchBookmark_Android_v1.0_fast_queue.apk`，默认不覆盖已有文件。升级现有安装需要相同签名证书。
 
-2026-10-14 已构建 APK，并通过 Android Java/资源编译、DEX生成、签名与对齐校验；未运行 Android 设备或模拟器，未登录真实 Pixiv、未提交线上收藏，也未测量真实网络提速。`docs/` 截图与 `tests/test-wallpaper-ui.py` 属于继承的 v0.1.6 资料，不能当作 v0.1.7 的运行证据。设备验收应补充活动/暂停期间旋转、进程恢复、选择器重建、超大 TXT、429/403、停止后迟到回调以及真实取消批次接口支持情况。
+2026-10-14 已构建 v0.1.7 APK，并通过 Android Java/资源编译、DEX生成、签名与对齐校验。v1.0 本次仅更新版本信息，未重新构建 APK。未运行 Android 设备或模拟器，未登录真实 Pixiv、未提交线上收藏，也未测量真实网络提速。`docs/` 截图与 `tests/test-wallpaper-ui.py` 属于继承的 v0.1.6 资料，不能当作 v0.1.7 或 v1.0 的运行证据。设备验收应补充活动/暂停期间旋转、进程恢复、选择器重建、超大 TXT、429/403、停止后迟到回调以及真实取消批次接口支持情况。

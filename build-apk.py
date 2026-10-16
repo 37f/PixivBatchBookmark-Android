@@ -19,7 +19,7 @@ def main():
     parser.add_argument('--android-jar', type=Path)
     parser.add_argument('--keystore', type=Path, required=True)
     parser.add_argument('--key-alias', default='androiddebugkey')
-    parser.add_argument('--output', type=Path, default=ROOT / 'dist' / 'PixivBatchBookmark_Android_v0.1.7_fast_queue.apk')
+    parser.add_argument('--output', type=Path, default=ROOT / 'dist' / 'PixivBatchBookmark_Android_v1.0_fast_queue.apk')
     args = parser.parse_args()
     if not args.sdk_root or not args.java_root:
         parser.error('Provide --sdk-root and --java-root, or set ANDROID_SDK_ROOT and JAVA_HOME.')

@@ -175,7 +175,7 @@ public class MainActivity extends Activity {
         webLayer.setTag("webLayer");
         root.addView(webLayer, new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
-        appendLog("安卓版 v0.1.7 快速队列·双壁纸版已启动。");
+        appendLog("安卓版 v1.0 快速队列·双壁纸版已启动。");
         setEditingEnabled(false);
         startBtn.setEnabled(false);
         restoreState();
@@ -287,7 +287,7 @@ public class MainActivity extends Activity {
         titleRow.addView(title, titleParams);
         header.addView(titleRow);
 
-        TextView subtitle = text("v0.1.7 快速队列·双壁纸版 · 自动提取作品 ID；画师/用户 ID 会尽量自动排除。账号密码只输入 Pixiv 官方网页。", 13, false);
+        TextView subtitle = text("v1.0 快速队列·双壁纸版 · 自动提取作品 ID；画师/用户 ID 会尽量自动排除。账号密码只输入 Pixiv 官方网页。", 13, false);
         subtitle.setTextColor(Color.DKGRAY);
         add(header, subtitle, 0, 10, 0, 10);
 
